@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BirdWatch</string>
+    <string name="add_button">+</string>
+    <string name="subtract_button">-</string>
+    <string name="image_source">All images retrieved from https://www.audubon.org/news/get-know-these-20-common-birds</string>
+    <string name="bird_select">-- Select bird --</string>
+    <string-array name="birds_array">
+        <item>American Robin</item>
+        <item>Northern Cardinal </item>
+        <item>Blue Jay </item>
+        <item>Steller\'s Jay </item>
+        <item>Mourning Dove </item>
+        <item>American Crow</item>
+        <item>European Starling</item>
+        <item>Northern Mockingbird</item>
+        <item>Black-billed Magpie</item>
+        <item>Dark-eyed Junco</item>
+        <item>Black-capped Chickadee</item>
+        <item>White-breasted Nuthatch</item>
+        <item>Tufted Titmouse</item>
+        <item>House Sparrow</item>
+        <item>House Wren</item>
+        <item>House Finch</item>
+        <item>American Goldfinch</item>
+        <item>Downy Woodpecker</item>
+        <item>Hairy Woodpecker</item>
+        <item>Red-bellied Woodpecker</item>
+        </string-array>
+    <string name="count">0</string>
+</resources>

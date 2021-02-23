@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         Button subtButton2 = findViewById(R.id.subtButton2);
         TextView counter1 = (TextView) findViewById(R.id.counter1);
         TextView counter2 = (TextView) findViewById(R.id.counter2);
+        ImageView imageView = (ImageView)findViewById(R.id.imageView);
+        ImageView imageView2 = (ImageView)findViewById(R.id.imageView2);
+
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,5 +91,147 @@ public class MainActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         spinner2.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long id) {
+                switch(pos){
+                    case 0:
+                        imageView.setImageResource(R.drawable.americanrobin);
+                        break;
+                    case 1:
+                        imageView.setImageResource(R.drawable.northerncardinal);
+                        break;
+                    case 2:
+                        imageView.setImageResource(R.drawable.bluejay);
+                        break;
+                    case 3:
+                        imageView.setImageResource(R.drawable.stellersjay);
+                        break;
+                    case 4:
+                        imageView.setImageResource(R.drawable.mourningdove);
+                        break;
+                    case 5:
+                        imageView.setImageResource(R.drawable.americancrow);
+                        break;
+                    case 6:
+                        imageView.setImageResource(R.drawable.europeanstarling);
+                        break;
+                    case 7:
+                        imageView.setImageResource(R.drawable.northernmockingbird);
+                        break;
+                    case 8:
+                        imageView.setImageResource(R.drawable.blackbilledmagpie);
+                        break;
+                    case 9:
+                        imageView.setImageResource(R.drawable.darkeyedjunco);
+                        break;
+                    case 10:
+                        imageView.setImageResource(R.drawable.blackcappedchickadee);
+                        break;
+                    case 11:
+                        imageView.setImageResource(R.drawable.whitebreastednuthatch);
+                        break;
+                    case 12:
+                        imageView.setImageResource(R.drawable.tuftedtitmouse);
+                        break;
+                    case 13:
+                        imageView.setImageResource(R.drawable.housesparrow);
+                        break;
+                    case 14:
+                        imageView.setImageResource(R.drawable.housewren);
+                        break;
+                    case 15:
+                        imageView.setImageResource(R.drawable.housefinch);
+                        break;
+                    case 16:
+                        imageView.setImageResource(R.drawable.americangoldfinch);
+                        break;
+                    case 17:
+                        imageView.setImageResource(R.drawable.downywoodpecker);
+                        break;
+                    case 18:
+                        imageView.setImageResource(R.drawable.hairywoodpecker);
+                        break;
+                    case 19:
+                        imageView.setImageResource(R.drawable.redbelliedwoodpecker);
+                        break;
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long id) {
+                switch(pos){
+                    case 0:
+                        imageView2.setImageResource(R.drawable.americanrobin);
+                        break;
+                    case 1:
+                        imageView2.setImageResource(R.drawable.northerncardinal);
+                        break;
+                    case 2:
+                        imageView2.setImageResource(R.drawable.bluejay);
+                        break;
+                    case 3:
+                        imageView2.setImageResource(R.drawable.stellersjay);
+                        break;
+                    case 4:
+                        imageView2.setImageResource(R.drawable.mourningdove);
+                        break;
+                    case 5:
+                        imageView2.setImageResource(R.drawable.americancrow);
+                        break;
+                    case 6:
+                        imageView2.setImageResource(R.drawable.europeanstarling);
+                        break;
+                    case 7:
+                        imageView2.setImageResource(R.drawable.northernmockingbird);
+                        break;
+                    case 8:
+                        imageView2.setImageResource(R.drawable.blackbilledmagpie);
+                        break;
+                    case 9:
+                        imageView2.setImageResource(R.drawable.darkeyedjunco);
+                        break;
+                    case 10:
+                        imageView2.setImageResource(R.drawable.blackcappedchickadee);
+                        break;
+                    case 11:
+                        imageView2.setImageResource(R.drawable.whitebreastednuthatch);
+                        break;
+                    case 12:
+                        imageView2.setImageResource(R.drawable.tuftedtitmouse);
+                        break;
+                    case 13:
+                        imageView2.setImageResource(R.drawable.housesparrow);
+                        break;
+                    case 14:
+                        imageView2.setImageResource(R.drawable.housewren);
+                        break;
+                    case 15:
+                        imageView2.setImageResource(R.drawable.housefinch);
+                        break;
+                    case 16:
+                        imageView2.setImageResource(R.drawable.americangoldfinch);
+                        break;
+                    case 17:
+                        imageView2.setImageResource(R.drawable.downywoodpecker);
+                        break;
+                    case 18:
+                        imageView2.setImageResource(R.drawable.hairywoodpecker);
+                        break;
+                    case 19:
+                        imageView2.setImageResource(R.drawable.redbelliedwoodpecker);
+                        break;
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
     }
 }
